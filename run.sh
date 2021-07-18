@@ -1,0 +1,20 @@
+python main.py main \
+--data_root='./data/' \
+--dataset='mnist' \
+--distill=True \
+--baseline=False \
+--temperature=1. \
+--lambd=0.3 \
+--alpha=0.01 \
+--distill_type='kd' \
+--batch_size=32 \
+--epochs=160 \
+--optimizer='adam' \
+--init_lr=1e-5 \
+--gamma=0.2 \
+--milestones=[30,60,90,120,150] \
+--weight_decay=1e-5 \
+--fgsm=False \
+--epsilon=0.01 \
+--repeat_error_ver=False \
+--only_test=False
