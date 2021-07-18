@@ -59,27 +59,27 @@ just build them with half of channels compared to teachers.
 ### Hyper-parameters and defaults
 
 ```bash
---data_root: default is './data/'
---dataset: data set name, default is 'cifar10', 'mnist', 'fashion_mnist'
+--data_root # default is './data/'
+--dataset # data set name, default is 'cifar10', 'mnist', 'fashion_mnist'
 
---distill: True for distillation False then 'train_s' will work
---baseline: False for training student solely
---temperature: default is 1.
---lambd: hyperparameter, default is 0.3
---alpha: hyperparameter in self-regulation, default is 0.01
---distill_type: 'kd' f32or Hinton's method, 'cckd_t'/'cckd_l'/'cckd_t_reg'
+--distill # True for distillation False then 'train_s' will work
+--baseline # False for training student solely
+--temperature # default is 1.
+--lambd # hyperparameter, default is 0.3
+--alpha # hyperparameter in self-regulation, default is 0.01
+--distill_type # 'kd' f32or Hinton's method, 'cckd_t'/'cckd_l'/'cckd_t_reg'
 
---batch_size: default is 32
---epochs: default is 160
---optimizer: default is 'adamw', also support 'adam'/'momentum'
---init_lr: default is 1e-5
---gamma: learning rate decay rate, default is 0.2
---milestones: we use steplr decay, default is [30, 60, 90, 120, 150]
---weight_decay: default is 1e-5
+--batch_size # default is 32
+--epochs # default is 160
+--optimizer # default is 'adamw', also support 'adam'/'momentum'
+--init_lr # default is 1e-5
+--gamma # learning rate decay rate, default is 0.2
+--milestones # we use steplr decay, default is [30, 60, 90, 120, 150]
+--weight_decay # default is 1e-5
 
---fgsm: for adversarial attack, default is False
---epsilon: step size for FGSM
---repeat_error_ver: repeat error verification in Experiment 4.6 in the paper?
+--fgsm # for adversarial attack, default is False
+--epsilon # step size for FGSM
+--repeat_error_ver # repeat error verification in Experiment 4.6 in the paper?
     default is False
 ```
 
