@@ -16,12 +16,12 @@ They also propose three different methods, CCKD-L, CCKD-T, and CCKD-T-REG. All m
 in the following:
 
 
-![img](./README/CCKD.png)
+![img](./README/cckd.png)
 
 CCKD-L is loss function-level method, however CCKD-T is target-level method. in CCKD-T,
 
-![img](./README/CCKD-T1.png)
-![img](./README/CCKD-T2.png)
+![img](./README/cckd-t1.png)
+![img](./README/cckd-t2.png)
 
 And in implementation, I've noticed that in the algorithm, authors only use temperature in student,
 but for me, I also use temperature in y_T.
@@ -29,11 +29,11 @@ but for me, I also use temperature in y_T.
 For CCKD-T-REG, it is CCKD-T with self-regulation, self-regulation is a technique which adopts 
 less example in training to save computation resource. More specifically, CCKD-T-REG is given as,
 
-![img](./README/CCKD-T-REG1.png)
+![img](./README/cckd-t-reg1.png)
 
 Whole algorithm for CCKD-T-REG is,
 
-![img](./README/CCKD-T-REG2.png)
+![img](./README/cckd-t-reg2.png)
 
 For more details and notations, please read the paper.
 
